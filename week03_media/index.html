@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Media Page</title>
+	</head>
+	<body>
+		<h2>Image Tag Example</h2>
+		<img
+			src="images/nyc-9.jpg"
+			alt="New York City street at dusk with the light reflecting off of all the windows"
+			width="400"
+		/>
+		<h2>Video Tag Example</h2>
+		<video width="320" height="240" controls>
+			<source src="video/cream.mp4" type="video/mp4" />
+			Your computer is dumb... Oh well
+		</video>
+		<h2>SVG via Tag Example</h2>
+		<img
+			src="svg/testforvsc.svg"
+			alt="Emma Bermeo Creative logo in orange"
+			width="200"
+		/>
+		<h2>SVG via Code Example</h2>
+		<svg
+			width="120"
+			height="120"
+			viewbox="0 0 120 120"
+			role="img"
+			aria-label="Red Circle"
+		>
+			<circle cx="60" cy="60" r="45" fill="#DC143C"></circle>
+		</svg>
+		<h2>Canvas Code Example</h2>
+		<canvas id="myCanvas" width="300" height="150"></canvas>
+		<script>
+			const canvas = document.getElementById("myCanvas");
+			const ctx = canvas.getContext("2d");
+			ctx.fillStyle = "#DC834C";
+			ctx.fillRect(50, 50, 200, 50);
+		</script>
+	</body>
+</html>
