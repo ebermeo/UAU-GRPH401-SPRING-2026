@@ -1,0 +1,59 @@
+body {
+	background-color: #f4f4f4;
+	font-family: Arial, sans-serif;
+}
+
+section {
+	text-align: center;
+}
+
+.card {
+	display: inline-block;
+	vertical-align: top;
+	margin: 50px 50px;
+	background-color: #d3d3d3;
+	width: 300px;
+	border-radius: 15px;
+	padding: 15px;
+}
+
+#hero h1 {
+	background-color: #0047ab;
+	padding: 60px 60px;
+	color: white;
+	text-align: center;
+	font-size: 50px;
+}
+.card img {
+	width: 50%;
+	border-radius: 15px;
+}
+
+.card-title {
+	font-size: 24px;
+	color: black;
+}
+
+.card-description {
+	font-size: 14px;
+	margin: 15px 0;
+}
+
+.button {
+	display: inline-block;
+	background-color: #0047ab;
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.button:hover {
+	background-color: #0a2b4e;
+}
+
+.section-title {
+	font-style: italic;
+	letter-spacing: 10px;
+	font-size: 25px;
+}
