@@ -1,0 +1,61 @@
+/* Project Variables */
+:root. {
+	--primary: #3498db;
+	--light: #ffff;
+	--alternate: #00b894;
+	--dark: #2d3436;
+	--spacing: 20px;
+}
+
+header {
+	padding: var(--spacing);
+	background: var(--primary);
+	color: var(--light);
+	text-align: left;
+}
+header h1 {
+	font-size: 50px;
+	font-family: Cambria;
+}
+body {
+	font-family: sans-serif;
+}
+.card {
+	padding: 20px;
+	background-color: lightgrey;
+	max-width: 500px;
+	text-align: left;
+	border-radius: 15px;
+}
+.card img {
+	text-align: center;
+}
+.card-content {
+	text-align: center;
+}
+.card-content h2 {
+	font-size: 35px;
+}
+.card-content p {
+	font-size: 20px;
+	font-style: italic;
+}
+.card-content button {
+	background-color: grey;
+	border: none;
+	padding: 20px;
+	border-radius: 15px;
+	font-size: 15px;
+}
+.card-content button:hover {
+	background-color: #00b894;
+}
+
+@media (min-width: 768px) {
+	.card {
+		text-align: center;
+	}
+}
+
+@media (min-width: 1084px) {
+}

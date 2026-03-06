@@ -1,37 +1,103 @@
 /* Project Variables */
-:root. {
-	--primary-color: #3498db;
+:root {
+	--primary: #3498db;
+	--light: #ffff;
+	--alternate: #00b894;
+	--dark: #2d3436;
+	--spacing: 20px;
 }
 
 header {
+	padding: 20px;
+	background-color: #3498db;
+	color: white;
+	text-align: left;
 }
 
 header h1 {
+	font-size: 20px;
+	font-family: Cambria;
+	text-align: left;
+}
+
+body {
+	font-family: sans-serif;
 }
 
 .card {
+	margin: 20px;
+	padding: 20px;
+	border-radius: 15px;
+	background-color: lightgrey;
 }
 
 .card img {
+	width: 150px;
+	padding: 20px;
 }
 
 .card-content {
-}
-
-.card-content h2 {
-}
-
-.card-content p {
+	text-align: left;
 }
 
 .card-content button {
+	background-color: #2d3436;
+	border: none;
+	padding: 20px;
+	border-radius: 15px;
+	font-size: 15px;
+	color: white;
 }
 
 .card-content button:hover {
+	background-color: var(--alternate);
 }
 
 @media (min-width: 768px) {
+	.card {
+		text-align: center;
+		background-color: #2d3436;
+		color: white;
+		padding: 30px;
+	}
+	.card-content button {
+		background-color: lightgrey;
+		color: #2d3436;
+	}
+	.card-content {
+		text-align: center;
+	}
+	header {
+		background-color: var(--alternate);
+		padding: 30px;
+	}
+
+	header h1 {
+		text-align: center;
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
 }
 
 @media (min-width: 1084px) {
+	header {
+		background-color: #2d3436;
+		padding: 40px;
+	}
+	header h1 {
+		text-align: center;
+		font-size: 60px;
+	}
+	.card-content {
+		text-align: center;
+	}
+	.card {
+		padding: 40px;
+	}
+	h2 {
+		font-size: 30px;
+	}
 }
