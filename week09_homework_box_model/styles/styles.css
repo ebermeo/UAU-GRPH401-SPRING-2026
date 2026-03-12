@@ -1,3 +1,67 @@
 /* Project Variables */
 :root {
+	--primary-color: green;
+	--secondary-color: grey;
+	--border-color: #ddd;
+	--border-width: 1px;
+	--button-background-color: green;
+	--button-text-color: #fff;
+	--button-hover-background-color: #006400;
+	--button-padding: 10px 20px;
+	--card-padding-mobile: 15px;
+	--card-padding-desktop: 30px;
+	--card-border-radius: 10px;
+	--card-margin: 20px;
+	--card-width-desktop: 450px;
+	--card-width-mobile: 300px;
+	--heading-font-size-mobile: 24px;
+	--heading-font-size-desktop: 36px;
+	--paragraph-font-size: 16px;
+	--image-width: 100%;
+}
+
+/* DESKTOP */
+p {
+	font-size: var(--paragraph-font-size);
+	color: var(--secondary-color);
+}
+
+h2 {
+	font-size: var(--heading-font-size-desktop);
+	color: var(--primary-color);
+}
+
+.card {
+	padding: var(--card-padding-desktop);
+	width: var(--card-width-desktop);
+	border: var(--border-width) solid var(--border-color);
+	border-radius: var(--card-border-radius);
+	margin: var(--card-margin);
+}
+
+img {
+	width: var(--image-width);
+}
+
+button {
+	background-color: var(--button-background-color);
+	color: var(--button-text-color);
+	padding: var(--button-padding);
+	border: none;
+}
+
+button:hover {
+	background-color: var(--button-hover-background-color);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+	.card {
+		padding: var(--card-padding-mobile);
+		width: var(--card-width-mobile);
+	}
+	h2 {
+		font-size: var(--heading-font-size-mobile);
+	}
 }
