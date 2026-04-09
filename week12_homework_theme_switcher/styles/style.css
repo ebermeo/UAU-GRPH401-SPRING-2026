@@ -1,80 +1,105 @@
 :root {
 	/* Theme 1 — Default */
-	--bg-color: #your-value;
-	--text-color: #your-value;
-	--accent-color: #your-value;
-	--card-bg: #your-value;
-	--header-bg: #your-value;
-	--header-text: #your-value;
+	--bg-color: rgb(254, 251, 246);
+	--text-color: rgb(0, 0, 0);
+	--accent-color: rgb(247, 129, 40);
+	--card-bg: rgb(211, 206, 200);
+	--header-bg: rgb(246, 188, 144);
+	--header-text: rgb(254, 251, 246);
 }
 
 .theme-two {
-	--bg-color: #your-value;
+	--bg-color: rgb(247, 129, 40);
+	--text-color: black;
+	--accent-color: rgb(211, 206, 200);
+	--card-bg: rgb(254, 251, 246);
+	--header-bg: rgb(254, 251, 246);
+	--header-text: rgb(247, 129, 40);
 	/* ...all 6 variables overridden... */
 }
 
 .theme-three {
-	--bg-color: #your-value;
+	--bg-color: rgb(246, 188, 144);
+	--text-color: rgb(254, 251, 246);
+	--accent-color: rgb(254, 251, 246);
+	--card-bg: rgb(247, 129, 40);
+	--header-bg: rgb(247, 129, 40);
+	--header-text: rgb(254, 251, 246);
 	/* ...all 6 variables overridden... */
 }
 
 body {
-background-color: var(--bg-color);
-color: var(--text-color);
-/* Smooth theme switching — makes color change animate instead of snap
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	font-family: Helvetica;
+	/* Smooth theme switching — makes color change animate instead of snap
 */
-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
 
 /* ─── FLEXBOX TEASER — more on this next week! ─── */
 .cards {
-display: flex; /* Lines the cards up side by side */
-gap: 20px; /* Space between each card */
-padding: 20px 40px 60px;
+	display: flex; /* Lines the cards up side by side */
+	gap: 20px; /* Space between each card */
+	padding: 20px 40px 60px;
 }
 
 .card {
-flex: 1; /* Each card takes up an equal share of the row */
-background-color: var(--card-bg);
-border-radius: 10px;
-padding: 24px;
-box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+	flex: 1; /* Each card takes up an equal share of the row */
+	background-color: var(--card-bg);
+	border-radius: 10px;
+	padding: 24px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
-width: 100%; /* Image fills the full width of the card */
-border-radius: 6px;
-margin-bottom: 12px;
+	width: 100%; /* Image fills the full width of the card */
+	border-radius: 6px;
+	margin-bottom: 12px;
 }
 .card h3 {
-color: var(--header-text);
+	color: var(--accent-color);
+	font-size: 20px;
 }
 
 /* ─── MOBILE: Stack the cards on small screens ─── */
 @media (max-width: 767px) {
-.cards {
-flex-direction: column; /* On mobile, stack cards vertically */
-}
+	.cards {
+		flex-direction: column; /* On mobile, stack cards vertically */
+	}
 }
 
 /* ─── Header Layout — also uses Flexbox (more on this next week!) ─── */
 header {
-display: flex; /* puts children side by side */
-justify-content: space-between; /* pushes h1 left, buttons right */
-align-items: center; /* vertically centers both */
-padding: 20px 40px;
-background-color: var(--header-bg);
-color: var(--header-text);
+	display: flex; /* puts children side by side */
+	justify-content: space-between; /* pushes h1 left, buttons right */
+	align-items: center; /* vertically centers both */
+	padding: 20px 40px;
+	background-color: var(--header-bg);
+	color: var(--header-text);
 }
 header h1 {
-margin: 0;
+	margin: 0;
 }
 .theme-buttons button {
-background-color: var(--accent-color);
-color: var(--bg-color);
-border: none;
-padding: 8px 16px;
-margin-left: 8px;
-border-radius: 4px;
-cursor: pointer;
-font-weight: bold;
+	background-color: var(--accent-color);
+	color: var(--bg-color);
+	border: none;
+	padding: 8px 16px;
+	margin-left: 8px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+h2 {
+	margin: 10px;
+}
+
+#main-bio {
+	margin: 10px;
+}
+
+footer {
+	text-align: center;
 }
