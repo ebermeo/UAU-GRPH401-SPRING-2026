@@ -69,7 +69,7 @@ body {
 	width: 130px;
 }
 
-* =====================================================
+/* =====================================================
 YOUR FLEXBOX CODE GOES IN THE THREE BLOCKS BELOW.
 DO NOT EDIT ANYTHING ABOVE THIS LINE.
 ===================================================== */
@@ -78,17 +78,25 @@ DO NOT EDIT ANYTHING ABOVE THIS LINE.
 .row-1 {
 	display: flex;
 	/* Challenge 1: add your property here */
+	justify-content: center;
 	/* Challenge 2: update this block for challenge 2 */
+	flex-direction: column;
+	align-items: center;
 }
 /* ROW 2 - Main Stage */
 .row-2 {
 	display: flex;
+
 	/* Challenge 3: add your property here */
+	justify-content: space-between;
 	/* Challenge 4: update this block for challenge 4 */
+	align-content: flex-end;
 }
 /* ROW 3 - All Stages */
 .row-3 {
 	display: flex;
 	/* Challenge 5: add your property here */
+	flex-wrap: wrap;
 	/* Challenge 6: update this block for challenge 6 */
+	justify-content: space-evenly;
 }
